@@ -1,0 +1,18 @@
+language: generic
+
+node_js:
+  - lts/*
+
+branches:
+ only:
+  - v1.0.0_dev
+  - v1.0.0_stable
+  
+install:
+  - npm
+
+script:
+  - npm test --coverage
+
+after_script:
+  - npm run coveralls
