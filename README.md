@@ -1,1 +1,2 @@
 # FastFoodFast-Angular
+[![buddy pipeline](https://app.buddy.works/ericebuluochol/fastfoodfast-angular/pipelines/pipeline/212384/badge.svg?token=8e3ed09b41f04a14c283084ccb9a8bd2050c856ed992b10ca356d06b24882f28 "buddy pipeline")](https://app.buddy.works/ericebuluochol/fastfoodfast-angular/pipelines/pipeline/212384)

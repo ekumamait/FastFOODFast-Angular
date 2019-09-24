@@ -14,6 +14,8 @@ import { ToasterService } from './shared/services/toaster.service';
 import { RegisterComponent } from './core/auth/register/register.component';
 import { StoreModule } from '@ngrx/store';
 import { reducers, metaReducers } from './reducers';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,7 @@ import { reducers, metaReducers } from './reducers';
         strictActionImmutability: true
       }
     }),
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
   ],
   entryComponents: [
     LoginComponent,
