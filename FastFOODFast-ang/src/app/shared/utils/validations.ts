@@ -7,7 +7,7 @@ export class Validations {
     const re = /\S+@\S+\.\S+/;
 
     if (value !== '') {
-      if (value.match(new RegExp(/^[+][2][5][0-9]{10}$/)) || re.test(value)) {
+      if (value.match(new RegExp('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')) || re.test(value)) {
         return null;
       }
       return { isValid: true };

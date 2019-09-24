@@ -186,7 +186,7 @@ svg.material-icons {
   .card span {
     color: #FF4E56;
     position: absolute;
-    margin: 0;
+    margin: -25px;
    }
 
   svg#clouds {

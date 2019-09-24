@@ -25,7 +25,7 @@ export class RegisterComponent implements OnInit {
   validate = new Validations();
   private validationMessages = {
     required: 'This field is required',
-    isValid: 'Please enter a value e.g (jondoe@mail.com)',
+    isValid: 'Please enter a value e.g (johndoe@mail.com)',
   };
 
   constructor(
@@ -36,9 +36,9 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit() {
     this.registrationForm = this.fb.group({
-      user_name: ['', Validators.required, ],
-      user_email: ['', Validators.required],
-      user_password: ['', Validators.required]
+      user_name: ['', [Validators.required, Validators.minLength(4)]],
+      user_email: ['', [Validators.required, this.validate.validInput]],
+      user_password: ['', [Validators.required, Validators.minLength(8)]]
     });
 
     this.registrationForm.valueChanges.subscribe((data: Object) => {
