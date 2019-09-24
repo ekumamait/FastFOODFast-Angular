@@ -17,4 +17,10 @@ export class AuthService {
     const { POST } = HttpMethods;
     return this.http.makeRequestWithData(url, data, POST);
   }
+
+  sendRegData = (data): Observable<any> => {
+    const url = '/auth/sign_up';
+    const { POST } = HttpMethods;
+    return this.http.makeRequestWithData(url, data, POST);
+  }
 }

@@ -1,0 +1,212 @@
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+.content {
+    display: flex;
+    margin: 32px auto;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginBox h2 {
+    color: goldenrod;
+    text-align: center; 
+}
+  
+svg.material-icons {
+    height: 24px;
+    width: auto;
+}
+
+  svg.material-icons:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .card svg.material-icons path {
+    fill: #888;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+    position: center;
+  }
+
+  .card {
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    height: 40px;
+    width: 200px;
+    margin: 0 8px 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+  }
+
+  .card-container .card:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .card.card-small {
+    height: 16px;
+    width: 168px;
+  }
+
+  .card-container .card:not(.highlight-card) {
+    cursor: pointer;
+  }
+
+  .card-container .card:not(.highlight-card):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(black, 0.35);
+  }
+
+  .card-container .card:not(.highlight-card):hover .material-icons path {
+    fill: rgb(105, 103, 103);
+  }
+
+  .card.highlight-card {
+    /* background-color: rgb(105, 103, 103); */
+    background: rgba(0, 0, 0, 0.7);
+    /* color: white; */
+    font-weight: 600;
+    border: none;
+    min-width: 30%;
+    position: absolute;
+    width: 350px;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px 40px;
+    border-radius: 0.3em;
+  }
+
+  .card.card.highlight-card span {
+    margin-left: 60px;
+  }
+
+  .card input {
+    width: 100%;
+    margin-bottom: 20px;
+    outline: none;
+  }
+
+  .card input[type='text'],
+  .card input[type='password'],
+  .card input[type='email'] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+   ::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .card input[type='submit'] {
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: goldenrod;
+    cursor: pointer;
+    border-radius: 0.3em;
+  }
+  
+  .card input[type='submit']:hover {
+    background: orange;
+    color: #fff;
+  }
+  
+  .card a {
+    color: goldenrod;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: orange;
+  }
+  
+  .card img {
+    border-radius: 0.3em;
+    margin: 0;
+  }
+  
+  .card h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .card h3 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .card small a b {
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    text-decoration: none;
+  }
+
+  .card img {
+    border-radius: 0.3em;
+  }
+
+  .card span {
+    color: #FF4E56;
+    position: absolute;
+    margin: -25px;
+   }
+
+  svg#clouds {
+    position: fixed;
+    bottom: -160px;
+    left: -230px;
+    z-index: -10;
+    width: 1920px;
+  }
+
+  /* Responsive Styles */
+  @media screen and (max-width: 767px) {
+
+    .card:not(.highlight-card) {
+      height: 16px;
+      margin: 8px 0;
+    }
+
+    .card.highlight-card span {
+      margin-left: 72px;
+    }
+
+  }
