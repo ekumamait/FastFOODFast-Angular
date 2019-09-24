@@ -12,6 +12,8 @@ import { MatSnackBarModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToasterService } from './shared/services/toaster.service';
 import { RegisterComponent } from './core/auth/register/register.component';
+import { StoreModule } from '@ngrx/store';
+import { reducers, metaReducers } from './reducers';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,13 @@ import { RegisterComponent } from './core/auth/register/register.component';
     ToastrModule.forRoot(),
     MatSnackBarModule,
     BrowserAnimationsModule,
+    StoreModule.forRoot(reducers, {
+      metaReducers,
+      runtimeChecks: {
+        strictStateImmutability: true,
+        strictActionImmutability: true
+      }
+    }),
   ],
   entryComponents: [
     LoginComponent,
