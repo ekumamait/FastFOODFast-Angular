@@ -1,2 +1,2 @@
 # FastFoodFast-Angular
-[![Build Status](https://travis-ci.org/ekumamait/FastFOODFast-Angular.svg?branch=develop)](https://travis-ci.org/ekumamait/FastFOODFast-Angular)[![Coverage Status](https://coveralls.io/repos/github/ekumamait/FastFOODFast-Angular/badge.svg)](https://coveralls.io/github/ekumamait/FastFOODFast-Angular)
+[![Build Status](https://travis-ci.org/ekumamait/FastFOODFast-Angular.svg?branch=develop)](https://travis-ci.org/ekumamait/FastFOODFast-Angular)[![Coverage Status](https://coveralls.io/repos/github/ekumamait/FastFOODFast-Angular/badge.svg?branch=develop)](https://coveralls.io/github/ekumamait/FastFOODFast-Angular?branch=develop)
