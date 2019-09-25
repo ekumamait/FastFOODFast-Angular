@@ -5,9 +5,10 @@
     "ng": "ng",
     "start": "ng serve -o",
     "build": "ng build",
-    "test": "ng test --code-coverage --browsers=Chrome && cat ./coverage/lcov.info | coveralls",
+    "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "ci": "ng test --code-coverage --browsers=Chrome"
   },
   "private": true,
   "dependencies": {
