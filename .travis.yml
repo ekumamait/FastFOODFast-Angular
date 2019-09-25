@@ -1,0 +1,13 @@
+language: generic
+
+node_js:
+  - lts/*
+  
+install:
+  - npm
+
+script:
+  - npm test
+
+after_script:
+  - npm ci
