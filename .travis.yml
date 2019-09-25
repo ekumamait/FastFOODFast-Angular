@@ -1,13 +1,10 @@
 language: generic
 
 node_js:
-  - lts/*
-  
+  - stable
+
 before_script:
   - npm install
 
 script:
   - npm test
-
-after_script:
-  - npm run ci
