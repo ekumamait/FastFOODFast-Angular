@@ -3,11 +3,11 @@ language: generic
 node_js:
   - lts/*
   
-install:
-  - npm
+before_script:
+  - npm install
 
 script:
   - npm test
 
 after_script:
-  - npm ci
+  - npm run ci
