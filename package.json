@@ -1,11 +1,11 @@
 {
-  "name": "fast-foodfast-ang",
+  "name": "fast-foodfast",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
     "build": "ng build",
-    "test": "ng test --code-coverage --browsers=Chrome",
+    "test": "ng test --code-coverage --browsers=Chrome && cat ./coverage/lcov.info | coveralls",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
