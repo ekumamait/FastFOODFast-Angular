@@ -28,6 +28,10 @@ module.exports = function (config) {
       }
     },
     reporters: ['progress', 'kjhtml'],
+    coverageReporter: {
+      type: 'lcov',
+      dir: 'coverage/'
+    },
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
