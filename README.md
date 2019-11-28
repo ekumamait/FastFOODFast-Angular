@@ -28,7 +28,7 @@ This is an online food order and delivery service app for a restaurant where reg
 ------------
 
 1. Clone the Repository
-` https://github.com/ekumamait/FastFOODFast-React.git `
+` https://github.com/ekumamait/FastFOODFast-Angular.git `
 
 2. Navigate to the application directory
 ` cd FastFOODFast-Angular `
